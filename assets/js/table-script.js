@@ -2,7 +2,7 @@ function preencherTabela() {
     const tbody = document.getElementById('pontuacaoBody');
 
     // Simulação de uma requisição GET para a URL
-    fetch('http://195.35.42.134:3000/pontuacoes/getAll')
+    fetch('https://api.nexuselite.com.br/pontuacoes/getAll')
         .then(response => response.json())
         .then(data => {
             data.forEach((item, index) => {
